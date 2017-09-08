@@ -1,8 +1,8 @@
 # Vandalism-Detection
 Application of SSD Tensorflow to detect probability density for person
 
-![alt text](logs/output1.jpg)
-![alt text](logs/output2.jpg)
+![alt text](img/output1.jpg)
+![alt text](img/output2.jpg)
 
 Model for our vandalism detection
 ![alt text](logs/graph.png)
