@@ -4,8 +4,12 @@ Application of SSD Tensorflow to detect probability density for person
 ![alt text](img/output1.jpg)
 ![alt text](img/output2.jpg)
 
-Model for our vandalism detection
-![alt text](logs/graph.png)
+Web service
+![alt text](logs/outputweb.ong)
+
+the code for this micro web service is on demos/
+
+we also deploy on live, www.huseinhouse.com/vandalism/
 
 # This model only able to train vandalism applications, cannot improve SSD accuracy.
 
@@ -30,3 +34,20 @@ epoch = 15
 ```bash
 python test_detect.py
 ```
+
+## Step to deploy own server
+1. Complete all above
+2. check the code at the bottom of server.py
+```python
+if __name__ == '__main__':
+	app.run(host = '0.0.0.0', threaded = True,  port = 8010)
+```
+3. If you want to do multi-threading for your server, install gunicorn, and simply,
+```bash
+sudo pip install gunicorn
+sudo gunicorn -w (NUMBER_OF_WORKER) -b (BINDING_ADDRESS:PORT) -p gunicorn.pid (FLASK_PYNAME):app
+# sudo gunicorn -w 4 -b 0.0.0.0:8000 -p gunicorn.pid server:app
+```
+
+Model for our vandalism detection
+![alt text](logs/graph.png)
