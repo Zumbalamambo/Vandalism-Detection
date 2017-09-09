@@ -5,7 +5,7 @@ Application of SSD Tensorflow to detect probability density for person
 ![alt text](img/output2.jpg)
 
 Web service
-![alt text](logs/outputweb.ong)
+![alt text](logs/outputweb.png)
 
 the code for this micro web service is on demos/
 
