@@ -7,16 +7,25 @@
 #demo-nav a {
   /*color: #aaa;*/
   font-weight: bold;
-  
+
   font-size: 12px;
-  
+
   padding: 10px 15px;
+}
+
+#updatetable tr{
+  cursor: pointer;
 }
 
 #demo-nav a.home {
   color: #FFBF00;
   font-size: 16px;
   padding-left: 0px;
+}
+
+.toast{
+  background-color: #fff;
+  color: #323232;
 }
 
 .demo-wrapper {
@@ -41,8 +50,8 @@
 
 /* Debug console */
 .demo-panel-debug {
-	min-height: 90px;
-	max-height: 90px;
+	min-height: 10px;
+	max-height: 200px;
 	overflow: auto;
 	cursor: default;
 }
